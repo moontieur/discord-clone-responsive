@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #23272a;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header.hero {
+  background-image: url(content/bg-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.buttons .btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.btn.primary {
+  background-color: white;
+  color: #5865f2;
+}
+
+.btn.secondary {
+  background-color: #23272a;
+  color: white;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 40px;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+  background-color: rgba(246, 246, 246, 1);
+}
+
+.section .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section .text {
+  max-width: 500px;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #23272a;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer img {
+  width: 150px;
+}
+
+.section-column {
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(246, 246, 246, 1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section,
+  .section.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-column .image img {
+    max-width: 90%;
+  }
+
+  .section-column .text {
+    font-size: 0.95rem;
+  }
+}
